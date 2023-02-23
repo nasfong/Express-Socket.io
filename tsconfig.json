@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "sourceMap": true,
+    "outDir": "./build",
     "esModuleInterop": true,
-    "outDir": "./dist"
-  }
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+  },
+  "include": ["src/**/*"]
 }
