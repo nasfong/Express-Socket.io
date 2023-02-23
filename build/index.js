@@ -36,7 +36,10 @@ const app = (0, express_1.default)();
 const httpServer = (0, http_1.createServer)(app);
 const io = new socket_io_1.Server(httpServer, {
     cors: {
-        origin: 'http://localhost:5173'
+        origin: 'http://127.0.0.1:5173',
+        // methods: ["GET", "POST"],
+        // allowedHeaders: ["my-custom-header"],
+        // credentials: true,
     }
 });
 io.on('connection', (socket) => {
